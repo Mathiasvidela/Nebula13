@@ -1,0 +1,115 @@
+.contact-section {
+  padding: 100px 0;
+  background-color: #0a0a0a;
+}
+
+.contact-container-centered {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.whatsapp-card {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 24px;
+  padding: 50px 30px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-accent);
+  box-shadow: 0 15px 40px rgba(160, 32, 240, 0.2);
+}
+
+.whatsapp-icon-large {
+  color: var(--color-accent);
+  margin-bottom: 20px;
+  background: rgba(160, 32, 240, 0.1);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-card h3 {
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.whatsapp-card p {
+  color: #aaa;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  max-width: 80%;
+}
+
+.btn-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366; /* WhatsApp Green */
+  color: white;
+  width: 100%;
+  max-width: 300px;
+  font-size: 1.1rem;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128C7E;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+.contact-direct-row {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.direct-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ddd;
+  font-size: 1rem;
+  background: #1a1a1a;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid #333;
+}
+
+.direct-icon {
+  color: var(--color-accent);
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-card {
+    padding: 30px 20px;
+  }
+  
+  .contact-direct-row {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .direct-item {
+    justify-content: center;
+  }
+}
