@@ -32,17 +32,21 @@ const Process = () => {
         <h2 className="section-title">Cómo trabajamos tu música</h2>
         
         <div className="process-timeline">
+          <div className="timeline-line"></div>
           {steps.map((step, index) => (
-            <div key={index} className="process-step">
-              <div className="step-number">0{index + 1}</div>
-              <div className="step-icon">
-                {step.icon}
+            <div key={index} className={`process-step ${index % 2 === 0 ? 'left' : 'right'}`}>
+              <div className="step-content-wrapper">
+                <div className="step-number">0{index + 1}</div>
+                <div className="step-card">
+                  <div className="step-icon-container">
+                    {step.icon}
+                    <div className="icon-glow"></div>
+                  </div>
+                  <h3>{step.title}</h3>
+                  <p>{step.description}</p>
+                </div>
               </div>
-              <div className="step-content">
-                <h3>{step.title}</h3>
-                <p>{step.description}</p>
-              </div>
-              {index < steps.length - 1 && <div className="step-connector"></div>}
+              <div className="timeline-dot"></div>
             </div>
           ))}
         </div>

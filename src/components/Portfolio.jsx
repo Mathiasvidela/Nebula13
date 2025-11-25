@@ -1,43 +1,49 @@
 import React from 'react';
 import { Play, ExternalLink } from 'lucide-react';
 import './Portfolio.css';
+import portadaShai from '../assets/portadaShai.jpg';
+import portadaNahum from '../assets/portadaNahum.png';
+import portadaLeamsi from '../assets/portadaLeamsi.png';
+import portadaLeamsi2 from '../assets/portada2Leamsi.png';
+import portadaLeamsi3 from '../assets/portada3Leamsi.png';
+
 
 const Portfolio = () => {
   const tracks = [
     {
-      title: "Noche en la Docta",
-      artist: "Lil Cba",
+      title: "PERSONAL TRAINER",
+      artist: "SHAI",
       genre: "Trap",
-      image: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=2070&auto=format&fit=crop",
-      youtubeLink: "https://www.youtube.com/"
+      image: portadaShai,
+      youtubeLink: "https://www.youtube.com/watch?v=S7xFFOQ4aoM"
     },
     {
-      title: "Ritmo Urbano",
-      artist: "MC Joven",
+      title: "QuE llovierA",
+      artist: "Nahum Bazano",
       genre: "Reggaetón",
-      image: "https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=2070&auto=format&fit=crop",
-      youtubeLink: "https://www.youtube.com/"
+      image: portadaNahum,
+      youtubeLink: "https://www.youtube.com/watch?v=v85AUPL3gnw&list=RDv85AUPL3gnw&start_radio=1"
     },
     {
-      title: "Flow Pesado",
-      artist: "Dark Soul",
+      title: "HICIMOS CONTACTO",
+      artist: "LEAMSI EL 22",
       genre: "Drill",
-      image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=2070&auto=format&fit=crop",
-      youtubeLink: "https://www.youtube.com/"
+      image: portadaLeamsi,
+      youtubeLink: "https://www.youtube.com/watch?v=v85AUPL3gnw&list=RDv85AUPL3gnw&start_radio=1"
     },
     {
-      title: "Sin Salida",
-      artist: "La Jefa",
-      genre: "R&B / Trap",
-      image: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?q=80&w=2070&auto=format&fit=crop",
-      youtubeLink: "https://www.youtube.com/"
+      title: "QUE LA CHOQUE",
+      artist: "LEAMSI EL 22",
+      genre: "Drill",
+      image: portadaLeamsi2,
+      youtubeLink: "https://www.youtube.com/watch?v=r81qCErF_go"
     },
     {
-      title: "Vibras de Verano",
-      artist: "Sol & Arena",
-      genre: "Pop Urbano",
-      image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2070&auto=format&fit=crop",
-      youtubeLink: "https://www.youtube.com/"
+      title: "FOTO",
+      artist: "LEAMSI EL 22",
+      genre: "Drill",
+      image: portadaLeamsi3,
+      youtubeLink: "https://www.youtube.com/watch?v=uNHQtJavoOY"
     },
     {
       title: "Callejero",

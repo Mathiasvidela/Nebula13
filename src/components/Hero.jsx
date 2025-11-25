@@ -187,8 +187,6 @@ const Hero = () => {
         </h1>
         <p className="hero-subtitle">
           Grabá, mezclá y masterizá tus temas con sonido pro, sin perder la esencia de la calle.
-          <br />
-          <span className="location-tag">Nueva Córdoba, Argentina</span>
         </p>
 
         <div className="hero-features">

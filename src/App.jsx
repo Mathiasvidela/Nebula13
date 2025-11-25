@@ -13,7 +13,6 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="app">
-      <div className="grain-overlay"></div>
       <Header />
       <main>
         <Hero />

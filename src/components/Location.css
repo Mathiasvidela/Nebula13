@@ -41,12 +41,6 @@
   color: var(--color-accent);
 }
 
-.location-tags {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
 .tag {
   background: rgba(255, 255, 255, 0.1);
   padding: 5px 15px;

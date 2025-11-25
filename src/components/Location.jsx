@@ -10,7 +10,7 @@ const Location = () => {
           <div className="location-info">
             <h2 className="section-title" style={{ textAlign: 'left' }}>En el corazón de <span className="text-accent">Nueva Córdoba</span></h2>
             <p className="location-desc">
-              Estamos ubicados estratégicamente cerca de todo. Fácil de llegar, cerca de los bares y la movida nocturna.
+              Estamos ubicados estratégicamente cerca de todo. Fácil de llegar
             </p>
             
             <ul className="location-details">
@@ -24,17 +24,13 @@ const Location = () => {
               </li>
             </ul>
 
-            <div className="location-tags">
-              <span className="tag">Zona Segura</span>
-              <span className="tag">Fácil Acceso</span>
-              <span className="tag">Cerca de Bares</span>
-            </div>
+            
           </div>
 
           <div className="map-container">
             <div className="map-placeholder">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.887396542874!2d-64.1887576848519!3d-31.41733998140375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2821e1a1d5f%3A0x6c0e6f8b8b8b8b8b!2sNueva%20C%C3%B3rdoba%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1620000000000!5m2!1ses!2sar" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.6526121038423!2d-64.1787116!3d-31.4236959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a290da4bad85%3A0xdece7004cf7a7f36!2sBalcarce%20442%2C%20X5000HWJ%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1764107797849!5m2!1ses-419!2sar" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
@@ -42,6 +38,7 @@ const Location = () => {
                 loading="lazy"
                 title="Mapa de Ubicación"
               ></iframe>
+
             </div>
           </div>
         </div>

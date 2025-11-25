@@ -11,11 +11,15 @@ const Contact = () => {
 
         <div className="contact-container-centered">
           <div className="whatsapp-card">
-            <div className="whatsapp-icon-large">
-              <Phone size={64} />
+            <div className="whatsapp-content">
+              <div className="whatsapp-icon-large">
+                <Phone size={48} />
+              </div>
+              <div className="whatsapp-text">
+                <h3>Hablemos por WhatsApp</h3>
+                <p>La forma más rápida de coordinar tu sesión. Consultá disponibilidad y precios.</p>
+              </div>
             </div>
-            <h3>Hablemos por WhatsApp</h3>
-            <p>La forma más rápida de coordinar tu sesión. Escribinos directamente para consultar disponibilidad y precios.</p>
             
             <a 
               href="https://wa.me/5493511234567" 
