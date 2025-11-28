@@ -6,6 +6,7 @@ import portadaNahum from '../assets/portadaNahum.png';
 import portadaLeamsi from '../assets/portadaLeamsi.png';
 import portadaLeamsi2 from '../assets/portada2Leamsi.png';
 import portadaLeamsi3 from '../assets/portada3Leamsi.png';
+import portadaPoupe from '../assets/portadaPoupe.png';
 
 
 const Portfolio = () => {
@@ -13,44 +14,38 @@ const Portfolio = () => {
     {
       title: "PERSONAL TRAINER",
       artist: "SHAI",
-      genre: "Trap",
       image: portadaShai,
       youtubeLink: "https://www.youtube.com/watch?v=S7xFFOQ4aoM"
     },
     {
       title: "QuE llovierA",
       artist: "Nahum Bazano",
-      genre: "Reggaetón",
       image: portadaNahum,
       youtubeLink: "https://www.youtube.com/watch?v=v85AUPL3gnw&list=RDv85AUPL3gnw&start_radio=1"
     },
     {
       title: "HICIMOS CONTACTO",
       artist: "LEAMSI EL 22",
-      genre: "Drill",
       image: portadaLeamsi,
       youtubeLink: "https://www.youtube.com/watch?v=v85AUPL3gnw&list=RDv85AUPL3gnw&start_radio=1"
     },
     {
       title: "QUE LA CHOQUE",
       artist: "LEAMSI EL 22",
-      genre: "Drill",
       image: portadaLeamsi2,
       youtubeLink: "https://www.youtube.com/watch?v=r81qCErF_go"
     },
     {
       title: "FOTO",
       artist: "LEAMSI EL 22",
-      genre: "Drill",
       image: portadaLeamsi3,
       youtubeLink: "https://www.youtube.com/watch?v=uNHQtJavoOY"
     },
     {
-      title: "Callejero",
-      artist: "El Barrio",
-      genre: "Rap",
-      image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2070&auto=format&fit=crop",
-      youtubeLink: "https://www.youtube.com/"
+      title: "Baby donde estás?",
+      artist: "Poupe music",
+      image: portadaPoupe,
+      youtubeLink: "https://www.youtube.com/watch?v=vQIZlJB8fJc"
     }
   ];
 

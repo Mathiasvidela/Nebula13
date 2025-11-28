@@ -37,6 +37,17 @@
   animation: fadeInUp 1s ease-out;
 }
 
+.hero-logo {
+  max-width: 90%;
+  width: 600px; /* Large size as requested */
+  height: auto;
+  margin-bottom: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0 0 20px rgba(160, 32, 240, 0.3)); /* Subtle glow matching brand */
+}
+
 .hero-title {
   font-size: 5rem;
   line-height: 1;
@@ -149,6 +160,10 @@
 }
 
 @media (max-width: 768px) {
+  .hero-logo {
+    width: 300px;
+  }
+
   .hero-title {
     font-size: 3.5rem;
   }

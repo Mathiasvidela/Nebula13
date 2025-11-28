@@ -14,13 +14,13 @@ const Location = () => {
             </p>
             
             <ul className="location-details">
-              <li>
-                <MapPin className="loc-icon" />
-                <span>Obispo Trejo 1234, Nueva Córdoba, Córdoba.</span>
+              <li className="address-item">
+                <MapPin className="loc-icon address-icon" />
+                <span className="address-text">Balcarce 427, Nueva Córdoba, Córdoba.</span>
               </li>
               <li>
                 <Navigation className="loc-icon" />
-                <span>A 2 cuadras del Buen Pastor.</span>
+                <span>A 6 cuadras del Buen Pastor.</span>
               </li>
             </ul>
 

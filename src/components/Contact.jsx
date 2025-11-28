@@ -22,7 +22,7 @@ const Contact = () => {
             </div>
             
             <a 
-              href="https://wa.me/5493511234567" 
+              href="https://wa.me/5493512038868" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn btn-primary btn-whatsapp"
@@ -30,17 +30,6 @@ const Contact = () => {
               <Phone size={20} style={{ marginRight: '10px' }} />
               Iniciar Chat
             </a>
-          </div>
-
-          <div className="contact-direct-row">
-            <div className="direct-item">
-              <Instagram className="direct-icon" />
-              <span>@nebula13studio</span>
-            </div>
-            <div className="direct-item">
-              <Mail className="direct-icon" />
-              <span>contacto@nebula13.com</span>
-            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import logoNavBar from '../assets/logoNavBar.svg';
 import './Header.css';
 
 const Header = () => {
@@ -30,7 +31,9 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container header-content">
         <div className="logo">
-          <a href="#hero">NEBULA 13</a>
+          <a href="#hero">
+            <img src={logoNavBar} alt="Nebula 13" className="nav-logo" />
+          </a>
         </div>
 
         <nav className={`nav-desktop ${isMenuOpen ? 'open' : ''}`}>

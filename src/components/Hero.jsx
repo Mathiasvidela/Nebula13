@@ -154,26 +154,33 @@ const Hero = () => {
 
     const handleResize = () => init();
     const handleMouseMove = (e) => {
+      if (!canvas) return;
       const rect = canvas.getBoundingClientRect();
-      mouse.x = e.clientX - rect.left;
-      mouse.y = e.clientY - rect.top;
-    };
-    const handleMouseLeave = () => {
-      mouse.x = null;
-      mouse.y = null;
+      // Check if mouse is within the hero section
+      if (
+        e.clientY >= rect.top &&
+        e.clientY <= rect.bottom &&
+        e.clientX >= rect.left &&
+        e.clientX <= rect.right
+      ) {
+        mouse.x = e.clientX - rect.left;
+        mouse.y = e.clientY - rect.top;
+      } else {
+        mouse.x = null;
+        mouse.y = null;
+      }
     };
 
     window.addEventListener('resize', handleResize);
-    canvas.addEventListener('mousemove', handleMouseMove);
-    canvas.addEventListener('mouseleave', handleMouseLeave);
+    window.addEventListener('mousemove', handleMouseMove);
+    // No need for mouseleave on canvas since we check bounds in mousemove
 
     init();
     draw();
 
     return () => {
       window.removeEventListener('resize', handleResize);
-      canvas.removeEventListener('mousemove', handleMouseMove);
-      canvas.removeEventListener('mouseleave', handleMouseLeave);
+      window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
 
@@ -182,9 +189,7 @@ const Hero = () => {
       <canvas ref={canvasRef} className="hero-canvas"></canvas>
       <div className="hero-overlay"></div>
       <div className="container hero-content">
-        <h1 className="hero-title">
-          Nebula 13 <span className="highlight">Estudio</span>
-        </h1>
+        <img src="/logoHeader.svg" alt="Nebula 13 Logo" className="hero-logo" />
         <p className="hero-subtitle">
           Grabá, mezclá y masterizá tus temas con sonido pro, sin perder la esencia de la calle.
         </p>

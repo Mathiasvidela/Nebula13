@@ -23,12 +23,19 @@
 }
 
 .logo a {
-  font-family: var(--font-heading);
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: white;
-  letter-spacing: 2px;
-  text-shadow: 0 0 10px var(--color-accent-glow);
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 40px; /* Adjust height as needed */
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 5px var(--color-accent-glow));
 }
 
 .nav-desktop ul {

@@ -12,13 +12,13 @@ const Footer = () => {
         </div>
         
         <div className="footer-social">
-          <a href="#" className="social-link" aria-label="Instagram">
+          <a href="https://www.instagram.com/nebula13.estudio?igsh=N2o2OXA3M203YjB5" className="social-link" aria-label="Instagram">
             <Instagram size={24} />
           </a>
-          <a href="#" className="social-link" aria-label="TikTok">
+          <a href="https://www.tiktok.com/@jublo6" className="social-link" aria-label="TikTok">
             <Music2 size={24} />
           </a>
-          <a href="#" className="social-link" aria-label="YouTube">
+          <a href="https://www.youtube.com/@nebula13beats/videos" className="social-link" aria-label="YouTube">
             <Youtube size={24} />
           </a>
         </div>
